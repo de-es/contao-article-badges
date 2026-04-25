@@ -1,0 +1,38 @@
+@use "sass:color";
+@use "sass:map";
+
+$columns: (
+    "default": #b74138,
+    "header": #1a70a2,
+    "main": #848b8f,
+    "left": #db9810,
+    "right": #df7b00,
+    "footer": #61a525,
+    "subheader": #1e83be,
+    "prefooter": #3c908e,
+);
+
+@mixin badge-colors($base-color) {
+  color: $base-color;
+  box-shadow: 0 0, $base-color 0 0 0 1px inset;
+}
+
+.tl_badge {
+  border-radius: var(--border-radius);
+  padding-inline: .375rem;
+  margin-left: .125rem;
+  font-size: .75rem;
+  font-weight: 500;
+  background: var(--body-bg);
+
+  // Default column
+  @include badge-colors(map-get($columns, 'default'));
+
+  // Custom columns
+  @each $column, $color in $columns {
+    &.column-#{$column} {
+      @include badge-colors($color);
+    }
+  }
+
+}

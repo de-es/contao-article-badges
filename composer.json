@@ -1,0 +1,50 @@
+{
+    "name": "de-es/contao-article-badges",
+    "description": "Contao extension providing colored badges for columns in the article view",
+    "type": "contao-bundle",
+    "license": "LGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Dennis Schmidt",
+            "homepage": "https://de-es.de",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/de-es/contao-article-badges",
+    "support": {
+        "issues": "https://github.com/de-es/contao-article-badges/issues",
+        "source": "https://github.com/de-es/contao-article-badges"
+    },
+    "require": {
+        "php": "^8.3",
+        "contao/core-bundle": "^5.7"
+    },
+    "require-dev": {
+        "contao/easy-coding-standard": "^6.0",
+        "contao/rector": "^1.0",
+        "contao/contao-rector": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeEs\\ContaoArticleBadges\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "DeEs\\ContaoArticleBadges\\ContaoManager\\Plugin"
+    },
+    "scripts": {
+        "all": [
+            "@ecs",
+            "@rector"
+        ],
+        "ecs": "@php vendor/bin/ecs check --fix",
+        "rector": "@php vendor/bin/rector"
+    }
+}

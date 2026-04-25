@@ -1,0 +1,44 @@
+.tl_badge {
+  border-radius: var(--border-radius);
+  padding-inline: 0.375rem;
+  margin-left: 0.125rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--body-bg);
+  color: #b74138;
+  box-shadow: 0 0, #b74138 0 0 0 1px inset;
+}
+.tl_badge.column-default {
+  color: #b74138;
+  box-shadow: 0 0, #b74138 0 0 0 1px inset;
+}
+.tl_badge.column-header {
+  color: #1a70a2;
+  box-shadow: 0 0, #1a70a2 0 0 0 1px inset;
+}
+.tl_badge.column-main {
+  color: #848b8f;
+  box-shadow: 0 0, #848b8f 0 0 0 1px inset;
+}
+.tl_badge.column-left {
+  color: #db9810;
+  box-shadow: 0 0, #db9810 0 0 0 1px inset;
+}
+.tl_badge.column-right {
+  color: #df7b00;
+  box-shadow: 0 0, #df7b00 0 0 0 1px inset;
+}
+.tl_badge.column-footer {
+  color: #61a525;
+  box-shadow: 0 0, #61a525 0 0 0 1px inset;
+}
+.tl_badge.column-subheader {
+  color: #1e83be;
+  box-shadow: 0 0, #1e83be 0 0 0 1px inset;
+}
+.tl_badge.column-prefooter {
+  color: #3c908e;
+  box-shadow: 0 0, #3c908e 0 0 0 1px inset;
+}
+
+/*# sourceMappingURL=backend.css.map */
