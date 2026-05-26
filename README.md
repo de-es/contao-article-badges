@@ -6,6 +6,8 @@ Die Badge für die `[Hauptspalte]` wird durch die Erweiterung standardmäßig ni
 
 Funktioniert sowohl für Standardlayouts als auch für moderne Twig-Layouts mit Slots.
 
+<img width="755" height="351" alt="Contao Article Badges" src="https://github.com/user-attachments/assets/c6db94c1-6986-4667-a43b-86d1cdc550cd" />
+
 ## Installation
 
 Contao Bundle mit Composer installieren:
